@@ -7,9 +7,36 @@ robot_follow = "follow"
 ==
 
 {% put jumbotron %}
-    <h1 class="display-3">AB plaatimine oü</h1>
+    <h1 class="display-3">Tutvustus ...</h1>
     <p class="lead">Pakume ...</p>
-    <p>Mõelge ..</p>
+    <p>Mõelge ...</p>
 {% endput %}
 
-<h1 class="display-4 wow animated zoomInDown m-t-3">Features</h1>
+<section id="intro" class="home-section">
+</section>
+
+<div class="container carousel-container col-12">
+    <div id="workdone" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ 'assets/work_images/pilt0.jpg'|theme }}" alt="">
+            </div>
+            <div class="carousel-item active">
+                <img src="{{ 'assets/work_images/pilt1.jpg'|theme }}" alt="">
+            </div>
+            <div class="carousel-item active">
+                <img src="{{ 'assets/work_images/pilt2.jpg'|theme }}" alt="">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#workdone" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#workdone" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+</div>

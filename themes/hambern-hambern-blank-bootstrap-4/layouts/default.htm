@@ -18,13 +18,17 @@
   </head>
   <body>
 
-  {% partial 'navbar' %}
+  <div class="content">
+    {% partial 'navbar' %}
 
-  {% partial 'jumbotron' %}
+    {% partial 'jumbotron' %}
 
-  <section id="page" class="container m-b-3">
-    {% page %}
-  </section>
+    <section id="page" class="m-b-3">
+      {% page %}
+    </section>
+  </div>
+
+  {% partial 'footer' %}
 
     <script src="{{ [
       'assets/vendor/jquery/dist/jquery.min.js',

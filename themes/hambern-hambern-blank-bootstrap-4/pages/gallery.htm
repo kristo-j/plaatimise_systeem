@@ -5,11 +5,46 @@ is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
 ==
+use Cms\Classes\Theme;
+
+function onStart() {
+    $theme = Theme::getActiveTheme();
+    $files = [];
+    $di = new \RecursiveDirectoryIterator($theme->getActiveTheme()->getPath() . '/assets/work_images/');
+
+    foreach (new \RecursiveIteratorIterator($di) as $filename => $file) {
+        if ($file->getFilename() == "." OR $file->getFilename() == "..")
+            continue;
+        $files[] = str_replace($theme->getActiveTheme()->getPath(), '', $filename);
+    }
+
+    $this['files'] = $files;
+    $this['file'] = '';
+    $this['testpic'] = "<div class='gg-element'><img src='{{'".$files[0]."'|theme}}'/></div>";
+}
+==
 {% put jumbotron %}
     <h1 class="display-3">Galerii</h1>
     <p>Meie tehtud tööd.</p>
 {% endput %}
 
 <section>
+<!--
+    {% for file in files %}
+    <div class="gg-element">
+        <img src="{{ file|theme }}" />
+    </div>
+    {% endfor %}-->
+    <div id="work-gallery" class="images-grid images-grid-work">
+        {% for file in files %}
+        <a href="{{ file|theme }}"
+           class="image-wrapper"
+           data-width="1024"
+           data-height="768">
+            <img class="image-thumb" src="{{ file|theme }}" />
+        </a>
+        {% endfor %}
+    </div>
 
+    </div>
 </section>

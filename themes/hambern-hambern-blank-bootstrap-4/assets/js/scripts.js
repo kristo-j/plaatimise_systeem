@@ -2,13 +2,14 @@ $(document).ready(function () {
     new WOW().init();
     plyr.setup();
 
-    $(document).ready(function(){
-        $('#workdone').carousel({
-            interval: 4000
-        })
+    $('#workdone').carousel({
+        interval: 3000,
+        pause: false,
+
     });
 
-    $(function () {
-        $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+    $(".images-grid-work").imagesGrid({
+        margin: 10
     });
+
 });

@@ -23,26 +23,30 @@
 
     {% partial 'jumbotron' %}
 
-    <section id="page" class="m-b-3">
+    <section id="page" class="">
       {% page %}
+
     </section>
+    {% partial 'footer' %}
   </div>
 
-  {% partial 'footer' %}
+
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
           integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
-          crossorigin="anonymous"></script>
-    <script src="{{ [
-      'assets/vendor/jquery/dist/jquery.min.js',
-      'assets/vendor/jquery/dist/jquery.slim.js',
-      'assets/vendor/tether/dist/js/tether.min.js',
-      'assets/vendor/bootstrap/dist/js/bootstrap.js',
-      'assets/vendor/wow/dist/wow.min.js',
-      'assets/vendor/holderjs/holder.min.js',
-      'assets/vendor/plyr/dist/plyr.js',
-      'assets/vendor/responsive-grid/jquery.imagesGrid.js',
-      'assets/js/scripts.js'
-    ]|theme }}"></script>
+          crossorigin="anonymous">
+  </script>
+  <script src="{{ [
+    'assets/vendor/jquery/dist/jquery.min.js',
+    'assets/vendor/jquery/dist/jquery.slim.js',
+    'assets/vendor/tether/dist/js/tether.min.js',
+    'assets/vendor/bootstrap/dist/js/bootstrap.min.js',
+    'assets/vendor/wow/dist/wow.min.js',
+    'assets/vendor/holderjs/holder.min.js',
+    'assets/vendor/plyr/dist/plyr.js',
+    'assets/vendor/responsive-grid/jquery.imagesGrid.js',
+    'assets/js/scripts.js'
+    ]|theme }}">
+  </script>
     {% framework extras %}
     {% scripts %}
   </body>

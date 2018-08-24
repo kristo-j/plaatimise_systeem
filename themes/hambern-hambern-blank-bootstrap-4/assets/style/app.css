@@ -1,5 +1,10 @@
 html, body {
     height: 100%;
+    min-height: 100%;
+}
+.content {
+    height: 100%;
+    min-height: 100%;
 }
 #intro {
     height: 100px;
@@ -7,9 +12,6 @@ html, body {
 #workdone {
     display: block;
     margin: 0 auto;
-    width: 80%;
-    height: 600px;
-    max-height: 600px;
 }
 #workdone img {
     height: 600px;
@@ -28,3 +30,25 @@ html, body {
 .blue {
     background-color: #061b2f;
 }
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+    transform: translateX(0);
+}
+
+

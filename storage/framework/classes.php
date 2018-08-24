@@ -127,4 +127,8 @@
   'Backend\\FormWidgets\\CodeEditor' => 'modules/backend/formwidgets/CodeEditor.php',
   'Cms\\FormWidgets\\Components' => 'modules/cms/formwidgets/Components.php',
   'System\\Classes\\ErrorHandler' => 'modules/system/classes/ErrorHandler.php',
+  'System\\Helpers\\Cache' => 'modules/system/helpers/Cache.php',
+  'Backend\\Behaviors\\FormController' => 'modules/backend/behaviors/FormController.php',
+  'System\\Classes\\MediaLibrary' => 'modules/system/classes/MediaLibrary.php',
+  'System\\Classes\\MediaLibraryItem' => 'modules/system/classes/MediaLibraryItem.php',
 );

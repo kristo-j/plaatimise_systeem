@@ -131,4 +131,6 @@
   'Backend\\Behaviors\\FormController' => 'modules/backend/behaviors/FormController.php',
   'System\\Classes\\MediaLibrary' => 'modules/system/classes/MediaLibrary.php',
   'System\\Classes\\MediaLibraryItem' => 'modules/system/classes/MediaLibraryItem.php',
+  'Cms\\Twig\\ContentNode' => 'modules/cms/twig/ContentNode.php',
+  'System\\Helpers\\View' => 'modules/system/helpers/View.php',
 );

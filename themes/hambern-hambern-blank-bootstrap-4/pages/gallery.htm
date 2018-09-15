@@ -1,6 +1,6 @@
 title = "gallery"
 url = "/gallery"
-layout = "default"
+layout = "defaultNoJumbotron"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
@@ -23,28 +23,23 @@ function onStart() {
     $this['testpic'] = "<div class='gg-element'><img src='{{'".$files[0]."'|theme}}'/></div>";
 }
 ==
-{% put jumbotron %}
-    <h1 class="display-3">Galerii</h1>
-    <p>Meie tehtud tööd.</p>
-{% endput %}
-
 <section>
-<!--
-    {% for file in files %}
-    <div class="gg-element">
-        <img src="{{ file|theme }}" />
-    </div>
-    {% endfor %}-->
-    <div id="work-gallery" class="images-grid images-grid-work">
-        {% for file in files %}
-        <a href="{{ file|theme }}"
-           class="image-wrapper"
-           data-width="1024"
-           data-height="768">
-            <img class="image-thumb" src="{{ file|theme }}" />
-        </a>
-        {% endfor %}
-    </div>
-
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="gallery-intro">
+            <p>
+                Teostame plaatimistöid kõrge kvaliteedi ja professionaalsusega.
+                Allolevast galeerist leiad pilte meie tehtud töödest.
+            </p>
+        </div>
+        <div id="work-gallery" class="images-grid images-grid-work">
+            {% for file in files %}
+            <a href="{{ file|theme }}"
+               class="image-wrapper"
+               data-width="1024"
+               data-height="768">
+                <img class="image-thumb" src="{{ file|theme }}" />
+            </a>
+            {% endfor %}
+        </div>
     </div>
 </section>

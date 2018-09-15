@@ -2,9 +2,11 @@ html, body {
     height: 100%;
     min-height: 100%;
 }
+body {
+    background-color: #f2f2f2;
+}
 .content {
-    height: 100%;
-    min-height: 100%;
+    min-height: 90%;
 }
 #intro {
     height: 100px;
@@ -19,8 +21,6 @@ html, body {
     width:100%;
 }
 .footer {
-    padding-top: 20px;
-    position: relative;
     bottom: 0;
     color: snow;
 }
@@ -50,5 +50,79 @@ html, body {
 .carousel-inner .carousel-item-left{
     transform: translateX(0);
 }
+.bottom-containers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.qutotation-action {
+    margin-top: 25px;
+}
+.cards-section {
+    margin-top: 35px;
+}
+.card {
+    min-height: 250px;
 
-
+    <!-- card height n min height -->
+}
+.card-body {
+    padding: 15px 15px;
+}
+.services-list {
+    list-style-type: none;
+}
+.page-footer {
+    background-color: #0d4b6c;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+.quote-control {
+    margin: 5px 0px;
+}
+.page-footer-company {
+    background-color: #0d4b6c;
+    margin: auto;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.page-footer-quote {
+    background-color: #0d4b6c;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: auto;
+    text-align: center;
+}
+#page {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.gallery-intro {
+    padding: 35px 40px;
+    font-size: 22px;
+    color: #004a6b;
+}
+.services-header {
+    padding-top: 4em;
+    padding-bottom: 3em;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+.services-body {
+    padding-left: 4em;
+    padding-right: 4em;
+    text-align: center;
+}
+.contact-header {
+    padding-top: 4em;
+    padding-bottom: 3em;
+    padding-right: 3em;
+    padding-left: 3em;
+    font-size: 22px;
+    color: #004a6b;
+    text-align: center;
+}

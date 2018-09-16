@@ -1,4 +1,7 @@
 $(document).ready(function () {
+
+    $(".loader").hide();
+
     new WOW().init();
     plyr.setup();
 
@@ -33,6 +36,16 @@ $(document).ready(function () {
     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
         event.preventDefault();
         $(this).ekkoLightbox();
+    });
+
+    $("#scroll-quote-btn").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#home-footer").offset().top
+        }, 1500);
+    });
+
+    $('.quotation-button').on('click', function() {
+
     });
 
 });

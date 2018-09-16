@@ -9,7 +9,6 @@ $(document).ready(function () {
 
     });
 
-
     $(".images-grid-work").imagesGrid({
         margin: 10
     });
@@ -29,6 +28,11 @@ $(document).ready(function () {
 
             next.children(':first-child').clone().appendTo($(this));
         }
+    });
+
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
     });
 
 });

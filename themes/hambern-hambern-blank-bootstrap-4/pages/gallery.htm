@@ -36,8 +36,11 @@ function onStart() {
             <a href="{{ file|theme }}"
                class="image-wrapper"
                data-width="1024"
-               data-height="768">
-                <img class="image-thumb" src="{{ file|theme }}" />
+               data-height="768"
+               data-toggle="lightbox"
+               data-gallery="workdone-gallery">
+
+                <img class="image-thumb img-fluid" src="{{ file|theme }}" />
             </a>
             {% endfor %}
         </div>

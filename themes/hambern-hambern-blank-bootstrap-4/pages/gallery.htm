@@ -10,38 +10,40 @@ use Cms\Classes\Theme;
 function onStart() {
     $theme = Theme::getActiveTheme();
     $files = [];
+    $count = 1;
     $di = new \RecursiveDirectoryIterator($theme->getActiveTheme()->getPath() . '/assets/work_images/');
 
     foreach (new \RecursiveIteratorIterator($di) as $filename => $file) {
         if ($file->getFilename() == "." OR $file->getFilename() == "..")
             continue;
         $files[] = str_replace($theme->getActiveTheme()->getPath(), '', $filename);
+        $count++;
     }
 
     $this['files'] = $files;
     $this['file'] = '';
-    $this['testpic'] = "<div class='gg-element'><img src='{{'".$files[0]."'|theme}}'/></div>";
+    $this['count'] = $count;
 }
 ==
 <section>
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="gallery-intro">
-            <p>
+            <p class="ep-tekst">
                 Teostame plaatimistöid kõrge kvaliteedi ja professionaalsusega.
                 Allolevast galeerist leiad pilte meie tehtud töödest.
             </p>
         </div>
         <div id="work-gallery" class="images-grid images-grid-work">
-            {% for file in files %}
-            <a href="{{ file|theme }}"
-               class="image-wrapper"
-               data-width="1024"
-               data-height="768"
-               data-toggle="lightbox"
-               data-gallery="workdone-gallery">
+            {% for i in 1..count-1 %}
+                <a href="{{ file|theme }}/assets/work_images/{{i}}.jpg"
+                   class="image-wrapper"
+                   data-width="700"
+                   data-height="500"
+                   data-toggle="lightbox"
+                   data-gallery="workdone-gallery">
 
-                <img class="image-thumb img-fluid" src="{{ file|theme }}" />
-            </a>
+                    <img class="image-thumb img-fluid" src="{{ file|theme }}/assets/work_images_thumbnails/thumb-{{i}}.png" />
+                </a>
             {% endfor %}
         </div>
     </div>

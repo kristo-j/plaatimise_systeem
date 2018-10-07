@@ -5,8 +5,14 @@ html, body {
 body {
     background-color: #f2f2f2;
 }
+@font-face {
+    font-family: squareSansProRegular;
+    src: url('../fonts/PF Square Sans Pro Regular.ttf');
+}
 .content {
+    font-family: squareSansProRegular;
     min-height: 90%;
+
 }
 #intro {
     height: 100px;
@@ -64,17 +70,27 @@ body {
 }
 .card {
     min-height: 250px;
-
+    border-radius: 0;
+    border: none;
+    background-color: #f2f2f2;
     <!-- card height n min height -->
 }
 .card-body {
     padding: 15px 15px;
 }
+.card-header {
+    border-bottom: none;
+}
 .services-list {
     list-style-type: none;
 }
+.cards-section {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+}
 .page-footer {
-    background-color: #0d4b6c;
+    background-color: #000000;
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;
@@ -83,7 +99,7 @@ body {
     margin: 5px 0px;
 }
 .page-footer-company {
-    background-color: #0d4b6c;
+    background-color: #000000;
     margin: auto;
     padding-top: 10px;
     color: white;
@@ -91,7 +107,7 @@ body {
     font-size: 1.5rem;
 }
 .page-footer-quote {
-    background-color: #0d4b6c;
+    background-color: #000000;
     padding-top: 25px;
     padding-bottom: 25px;
     margin: auto;
@@ -104,7 +120,7 @@ body {
 .gallery-intro {
     padding: 35px 40px;
     font-size: 22px;
-    color: #004a6b;
+    color: #000000;
 }
 .services-header {
     padding-top: 4em;
@@ -123,7 +139,7 @@ body {
     padding-right: 3em;
     padding-left: 3em;
     font-size: 22px;
-    color: #004a6b;
+    color: #000000;
     text-align: center;
 }
 .contact-form {
@@ -141,6 +157,59 @@ body {
     z-index: 9999;
     background: url('../images/Preloader_2.gif') 50% 50% no-repeat rgb(249,249,249);
     opacity: .8;
+}
+.navbar {
+    padding: 0px;
+    background-color: #000000;
+}
+.navbar-brand {
+    width: 200px;
+}
+.nav-item {
+    color: #ffffff;
+    padding: 10px 10px;
+}
+.nav-link {
+    color: #ffffff;
+    padding: 5px 5px;
+    font-size: 20px;
+}
+.intro-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+.teenused-header {
+    float: left;
+    background-color: #ec0000;
+    color: white;
+    padding: 0px 8px;
+}
+.page-footer-company-p {
+    font-size: 15px;
+}
+.ep-banner {
+    color: #000000;
+}
+.ep-pohitegevus {
+    font-size: 20px;
+    font-weight: 600;
+}
+.ep-kutse {
+    font-size: 20px;
+    font-weight: 600;
+}
+.ep-pealkiri {
+    padding-bottom: 30px;
+}
+.ep-tekst {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.gallery-intro {
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 @media (max-width: 544px) {
     .contact-form {

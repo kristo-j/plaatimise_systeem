@@ -30,7 +30,9 @@
 
     </div>
     <div class="footer">
-        {% partial 'footer-quote' %}
+        {% if this.page.title != 'contact' %}
+            {% partial 'footer-quote' %}
+        {% endif %}
         {% partial 'footer' %}
     </div>
 

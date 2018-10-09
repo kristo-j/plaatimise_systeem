@@ -1,26 +1,14 @@
-description="footer with quotation"
+description = "footer with quotation"
+
+[contactform]
 ==
 <div id="home-footer" class="page-footer font-small teal pt-4 col-lg-12 col-sm-12 col-md-12">
     <div class="container-fluid text-center text-md-left">
         <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-                <div class="col-lg-9 col-md-9 col-sm-12 contact-form">
-                    <h1>Kontakt</h1>
-                    <div class="form-quote">
-                        <input type="text" class="quote-name form-control quote-control"
-                            placeholder="Nimi"/>
-                        <input type="text" class="quote-email form-control quote-control"
-                               placeholder="E-mail"/>
-                        <textarea class="email-name form-control quote-control"
-                                  placeholder="Sõnum(Võimalusel ka tel nr)"></textarea>
-                        <input type="submit" class="quote-submit btn btn-warning quote-control"
-                               value="Saada" />
-                    </div>
-                </div>
-            </div>
+            {% component 'contactform' %}
             <div class="col-md-6 mb-md-0 mb-3">
                 <div class="col-lg-9 col-md-9 col-sm-12  contact-info">
-                    <h3>Ettevõtte andmed</h3>
+                    <h2 class="contact-info-header">Ettevõtte andmed</h2>
                     <p>Tel.: {% content 'companyphone.htm' %}</p>
                     <p>E-mail: {% content 'companyemail.htm' %}</p>
                     <p>Firma: {% content 'companyname.htm' %}</p>

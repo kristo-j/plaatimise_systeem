@@ -1,0 +1,23 @@
+<div class="col-md-6 mb-md-0 mb-3">
+    <div class="col-lg-9 col-md-9 col-sm-12  contact-info">
+        <h2 class="contact-info-header">Ettevõtte andmed</h2>
+        <p>Tel.: {% content 'companyphone.htm' %}</p>
+        <p>E-mail: {% content 'companyemail.htm' %}</p>
+        <p>Firma: {% content 'companyname.htm' %}</p>
+        <p>Registrikood: </p>
+        {% if this.page.title == 'features' %}
+            <div class="logo-container">
+                <div class="zero-padding col-lg-12 col-md-12 col-sm-12">
+                    <img class="zero-padding col-lg-8 col-md-7 col-sm-6" src="{{ file|theme }}/assets/images/logo pikk-02.svg" />
+                </div>
+            </div>
+        {% endif %}
+        {% if this.page.title == 'contact' %}
+        <div class="logo-container">
+            <div class="zero-padding col-lg-12 col-md-12 col-sm-12">
+                <img class="zero-padding col-lg-8 col-md-7 col-sm-6" src="{{ file|theme }}/assets/images/logo pikk-01.svg" />
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>

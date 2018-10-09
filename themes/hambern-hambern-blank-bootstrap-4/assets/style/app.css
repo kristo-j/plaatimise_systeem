@@ -144,9 +144,11 @@ body {
 }
 .contact-form {
     float: right;
+    padding-bottom: 30px;
 }
 .contact-info {
     float: left;
+    padding-bottom: 30px;
 }
 .loader {
     position: fixed;
@@ -163,7 +165,7 @@ body {
     background-color: #000000;
 }
 .navbar-brand {
-    width: 200px;
+    width: 160px;
 }
 .nav-item {
     color: #ffffff;
@@ -184,6 +186,10 @@ body {
     background-color: #ec0000;
     color: white;
     padding: 0px 8px;
+}
+.btn-form-quote {
+    color: #ffffff;
+    background-color: #ec0000;
 }
 .page-footer-company-p {
     font-size: 15px;
@@ -211,10 +217,20 @@ body {
     padding-top: 50px;
     padding-bottom: 25px;
 }
-@media (max-width: 544px) {
+.quote-form-header {
+    padding-bottom: 10px;
+}
+.contact-info-header {
+    padding-bottom: 10px;
+}
+.zero-padding {
+    padding: 0px;
+}
+@media (max-width: 550px) {
     .contact-form {
         width: 100%;
         float: left;
+        padding-bottom: 60px;
     }
     .contact-info {
         float: left;
@@ -235,4 +251,56 @@ body {
         padding-left: 0em;
         padding-right: 0em;
     }
+    .ep-pohitegevus {
+        font-size: 18px;
+    }
+    .ep-kutse {
+        font-size: 18px;
+    }
+    .ep-pealkiri {
+        padding-bottom: 30px;
+    }
+    .ep-tekst {
+        font-size: 18px;
+    }
+    .div-text-container {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    .div-text-container-banner {
+        padding-right: 75px;
+        padding-left: 75px;
+    }
 }
+
+@media (max-width: 530px) {
+    #jumbotron {
+        padding-top: 130px;
+    }
+    .navbar-nav {
+        float: left!important;
+    }
+}
+
+@media (min-width: 992px) {
+    .div-text-container {
+        padding-right: 250px;
+        padding-left: 250px;
+    }
+    .div-text-container-banner {
+        padding-right: 200px;
+        padding-left: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .div-text-container {
+        padding-right: 150px;
+        padding-left: 150px;
+    }
+    .div-text-container-banner {
+        padding-right: 125px;
+        padding-left: 125px;
+    }
+}
+

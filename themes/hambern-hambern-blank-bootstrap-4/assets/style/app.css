@@ -226,6 +226,16 @@ body {
 .zero-padding {
     padding: 0px;
 }
+.image-thumb {
+    padding: 4px;
+    min-height: 150px;
+}
+.picture-div, .work-gallery {
+    padding: 0px;
+}
+.gallery-page {
+    padding-bottom: 80px;
+}
 @media (max-width: 550px) {
     .contact-form {
         width: 100%;
@@ -263,13 +273,16 @@ body {
     .ep-tekst {
         font-size: 18px;
     }
+    .intro-text {
+        font-size: 18px;
+    }
     .div-text-container {
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
     .div-text-container-banner {
-        padding-right: 75px;
-        padding-left: 75px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
 
@@ -279,6 +292,9 @@ body {
     }
     .navbar-nav {
         float: left!important;
+    }
+    #page {
+        padding-top: 100px;
     }
 }
 
@@ -294,13 +310,11 @@ body {
 }
 
 @media (max-width: 992px) {
-    .div-text-container {
-        padding-right: 150px;
-        padding-left: 150px;
-    }
-    .div-text-container-banner {
-        padding-right: 125px;
-        padding-left: 125px;
+
+}
+@media (max-width: 770px) {
+    .contact-form {
+        float: left;!important
     }
 }
 

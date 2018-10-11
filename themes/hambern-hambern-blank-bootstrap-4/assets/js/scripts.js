@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
     $(".images-grid-work").imagesGrid({
-        margin: 5
+        margin: 0
     });
 
     $('.carousel .carousel-item').each(function(){

@@ -300,7 +300,7 @@ body {
         float: left!important;
     }
     #navbar {
-        margin-bottom: 110px;
+        margin-bottom: 52px;
     }
     .nav-link {
         font-size: 16px;
@@ -308,6 +308,12 @@ body {
     .logo-container-home {
         padding-left: 15%;
         padding-right: 15%;
+    }
+    .navbar-brand {
+        width: 40px;
+    }
+    .nav-link {
+        font-size: 13px;
     }
 }
 @media (max-width: 768px) {

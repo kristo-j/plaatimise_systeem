@@ -287,6 +287,13 @@ body {
     padding-left: 20%;
     padding-right: 20%;
 }
+.error-msg {
+    color: red;
+    font-weight: 600;
+}
+.border-color-red {
+    border-color: red;
+}
 
 @media (max-width: 535px) {
     .navbar-nav {

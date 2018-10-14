@@ -1,0 +1,27 @@
+<div id="success-message">
+
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    $('.error-msg').remove();
+    $('.success-msg').remove();
+    $('input').removeClass('border-color-red');
+
+    var errors = {{ fieldMsgs|json_encode()|raw }};
+    var success = {{ success|json_encode()|raw }};
+
+    $.each(errors, function(name, msg){
+        $('<div class="error-msg">' +msg+ '</div>').insertAfter($('input[name='+name+']'));
+        $('input[name='+name+']').addClass('border-color-red');
+    });
+
+    if(success) {
+        $('[name="name"]').val("");
+        $('[name="email"]').val("");
+        $('[name="content"]').val("");
+        $.notify("E-mail saadetud, vastame Teile nii pea kui võimalik!", "success");
+    }
+});
+</script>

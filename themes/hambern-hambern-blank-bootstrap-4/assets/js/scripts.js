@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $('.quote-submit').on('click', function(){
+
+    });
+
     $(".loader").hide();
 
     new WOW().init();

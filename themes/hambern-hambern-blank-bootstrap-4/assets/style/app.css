@@ -296,6 +296,9 @@ body {
 }
 
 @media (max-width: 535px) {
+    .page-footer-company-p {
+        margin-top: 0px;
+    }
     .navbar-nav {
         float: left!important;
     }

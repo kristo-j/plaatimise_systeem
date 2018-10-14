@@ -11,8 +11,7 @@ body {
 }
 .content {
     font-family: squareSansProRegular;
-    min-height: 90%;
-
+    min-height: 100%;
 }
 #intro {
     height: 100px;
@@ -90,7 +89,7 @@ body {
     font-weight: 600;
 }
 .page-footer {
-    background-color: #000000;
+    background-color: #1a1a1a;
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;
@@ -99,7 +98,7 @@ body {
     margin: 5px 0px;
 }
 .page-footer-company {
-    background-color: #000000;
+    background-color: #1a1a1a;
     margin: auto;
     padding-top: 10px;
     color: white;
@@ -107,7 +106,7 @@ body {
     font-size: 1.5rem;
 }
 .page-footer-quote {
-    background-color: #000000;
+    background-color: #1a1a1a;
     padding-top: 25px;
     padding-bottom: 25px;
     margin: auto;
@@ -128,16 +127,7 @@ body {
     padding-right: 3em;
     padding-left: 3em;
 }
-.services-body {
-    padding-left: 4em;
-    padding-right: 4em;
-    text-align: center;
-}
 .contact-header {
-    padding-top: 4em;
-    padding-bottom: 3em;
-    padding-right: 3em;
-    padding-left: 3em;
     font-size: 22px;
     color: #000000;
     text-align: center;
@@ -162,10 +152,12 @@ body {
 }
 .navbar {
     padding: 0px;
-    background-color: #000000;
+    background-color: #1a1a1a;
 }
 .navbar-brand {
-    width: 160px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 60px;
 }
 .nav-item {
     color: #ffffff;
@@ -183,13 +175,13 @@ body {
 }
 .teenused-header {
     float: left;
-    background-color: #ec0000;
+    background-color: #00cfd2;
     color: white;
     padding: 0px 8px;
 }
 .btn-form-quote {
     color: #ffffff;
-    background-color: #ec0000;
+    background-color: #00cfd2;
 }
 .page-footer-company-p {
     font-size: 15px;
@@ -207,11 +199,6 @@ body {
 }
 .ep-pealkiri {
     padding-bottom: 30px;
-}
-.ep-tekst {
-    color: #000000;
-    font-size: 20px;
-    font-weight: 600;
 }
 .gallery-intro {
     padding-top: 50px;
@@ -234,9 +221,113 @@ body {
     padding: 0px;
 }
 .gallery-page {
+    padding-top: 40px;
     padding-bottom: 80px;
 }
-@media (max-width: 550px) {
+.services-page, .contact-page {
+    padding-top: 40px;
+}
+.header-container {
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url('../images/back_image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+#navbar {
+    margin-bottom: 55px;
+}
+.container-padding {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.container-text-size {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 500;
+}
+.container-text-header-size {
+    color: #000000;
+    font-size: 34px;
+    font-weight: 500;
+}
+.bottom-text-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.gallery-button-div {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.home-li {
+    padding: 12px 10px;
+    list-style-image: url('../images/kolmnurk-01.svg');
+
+}
+.container-padding-vertical {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.services-container {
+    font-weight: 700;
+}
+.services-footer {
+    font-size: 18px;
+    font-weight: 400;
+}
+.service-section {
+    width: 100%;
+    float: left;
+}
+.services-leave-message {
+    width: 100%;
+    float: left;
+}
+.logo-container-home {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+@media (max-width: 535px) {
+    .navbar-nav {
+        float: left!important;
+    }
+    #navbar {
+        margin-bottom: 110px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+    .logo-container-home {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+@media (max-width: 768px) {
+    .logo-container-home {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .services-footer {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .services-container {
+        text-align: center;
+    }
+    #jumbotron {
+        padding-top: 130px;
+    }
+    .container-padding {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .container-text-size {
+        font-size: 20px;
+    }
+    .container-text-header-size {
+        font-size: 22px;
+    }
     .contact-form {
         width: 100%;
         float: left;
@@ -245,15 +336,7 @@ body {
     .contact-info {
         float: left;
     }
-    .contact-header {
-        padding-left: 0em;
-        padding-right: 0em;
-    }
     .services-header {
-        padding-left: 0em;
-        padding-right: 0em;
-    }
-    .services-body {
         padding-left: 0em;
         padding-right: 0em;
     }
@@ -284,20 +367,10 @@ body {
         padding-right: 0px;
         padding-left: 0px;
     }
-}
-
-@media (max-width: 530px) {
-    #jumbotron {
-        padding-top: 130px;
-    }
-    .navbar-nav {
-        float: left!important;
-    }
-    #page {
-        padding-top: 100px;
+    .service-section {
+        padding-bottom: 30px;
     }
 }
-
 @media (min-width: 992px) {
     .div-text-container {
         padding-right: 250px;
@@ -309,9 +382,6 @@ body {
     }
 }
 
-@media (max-width: 992px) {
-
-}
 @media (max-width: 770px) {
     .contact-form {
         float: left;!important

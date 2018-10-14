@@ -3,8 +3,8 @@
         <h2 class="contact-info-header">Ettevõtte andmed</h2>
         <p>Tel.: {% content 'companyphone.htm' %}</p>
         <p>E-mail: {% content 'companyemail.htm' %}</p>
-        <p>Firma: {% content 'companyname.htm' %}</p>
-        <p>Registrikood: </p>
+        <p>{% content 'companyname.htm' %}</p>
+        <p>{% content 'companyregnum.htm' %} </p>
         {% if this.page.title == 'features' %}
             <div class="logo-container">
                 <div class="zero-padding col-lg-12 col-md-12 col-sm-12">

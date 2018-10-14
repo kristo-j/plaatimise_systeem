@@ -1,16 +1,16 @@
 description = "Navigation bar"
 ==
-<section id="navbar" class="m-b-3">
+<section id="navbar" class="">
 	<nav class="navbar navbar-dark bg-inverse navbar-fixed-top">
 		<div class="">
 			<a class="navbar-brand" href="{{ 'home'|page }}">
 				<div class="zero-padding col-lg-12 col-md-12 col-sm-12">
-					<img class="zero-padding col-lg-12 col-md-12 col-sm-12" src="{{ file|theme }}/assets/images/logo pikk-02.svg" />
+					<img class="zero-padding col-lg-12 col-md-12 col-sm-12" src="{{ file|theme }}/assets/images/home-01.svg" />
 				</div>
 			</a>
 			<ul class="nav navbar-nav pull-xs-right">
 				<li class="nav-item{{ this.page.baseFileName == 'gallery' ? ' active' }}">
-					<a class="nav-link" href="{{ 'gallery'|page }}">Galerii</a>
+					<a class="nav-link" href="{{ 'gallery'|page }}">Tehtud tööd</a>
 				</li>
 				<li class="nav-item{{ this.page.baseFileName == 'services' ? ' active' }}">
 					<a class="nav-link" href="{{ 'services'|page }}">Teenused</a>

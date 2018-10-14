@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <link rel="icon" sizes="any" type="image/svg+xml" href="{{ file|theme }}/assets/images/logo lyhike-01.svg">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="{{ file|theme }}/assets/images/logo lyhike-01.png">
     <title>Ekspert Plaadimees</title>
     <link href="{{ [
       'assets/vendor/bootstrap/dist/css/bootstrap.min.css',
@@ -26,7 +26,7 @@
   <div class="content">
     {% partial 'navbar' %}
 
-    {% partial 'jumbotron' %}
+    {% partial 'home-welcome' %}
 
     <section id="page" class="">
       {% page %}
@@ -35,10 +35,10 @@
   </div>
   <div class="footer">
     <div id="home-footer" class="page-footer font-small teal pt-4 col-lg-12 col-sm-12 col-md-12">
-      <div class="container-fluid text-center text-md-left">
+      <div class="container-fluid">
         <div class="row">
           {% component 'contactform' %}
-          {% partial 'companyinfo' %}
+          {% partial 'homecompanyinfo' %}
         </div>
       </div>
     </div>

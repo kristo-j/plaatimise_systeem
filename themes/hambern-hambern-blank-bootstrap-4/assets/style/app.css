@@ -294,10 +294,15 @@ body {
 .border-color-red {
     border-color: red;
 }
+.page-footer-company-p {
+    margin-top: 0px;
+    margin-botton: 0px;
+}
 
 @media (max-width: 535px) {
     .page-footer-company-p {
         margin-top: 0px;
+        margin-botton: 0px;
     }
     .navbar-nav {
         float: left!important;

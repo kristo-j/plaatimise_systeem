@@ -6,7 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Ekspert Plaadimees OÜ. Plaatimine Tallinnas ja Harjumaa piirkonnas.">
+    <meta name="keywords" content="plaatimistööd, ekspert plaadimees, plaadimees, plaatimine tallinnas, plaatimine, plaadid" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="icon" sizes="any" type="image/svg+xml" href="{{ file|theme }}/assets/images/logo lyhike-01.png">
+
     <title>Ekspert Plaadimees</title>
     <link href="{{ [
       'assets/vendor/bootstrap/dist/css/bootstrap.min.css',
@@ -36,9 +40,13 @@
   <div class="footer">
     <div id="home-footer" class="page-footer font-small teal pt-4 col-lg-12 col-sm-12 col-md-12">
       <div class="container-fluid">
-        <div class="row">
-          {% component 'contactform' %}
-          {% partial 'homecompanyinfo' %}
+        <div class="row home-companyinfo-row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            {% component 'contactform' %}
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            {% partial 'homecompanyinfo' %}
+          </div>
         </div>
       </div>
     </div>
